@@ -3,74 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoFazenda Inteligente</title>
+    <title>Agro Forte Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
+
     <header>
-        <img src="img/logo-ecofazenda.png" alt="Logo EcoFazenda" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projeto">Projeto</a></li>
-                <li><a href="#simulador">Simulador</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>🌱 Agro Forte Sustentável</h1>
+        <p>Produção e Meio Ambiente em Harmonia</p>
     </header>
 
-    <!-- Seção Home -->
-    <section id="home" class="banner">
-        <img src="img/banner-eco.png" alt="Banner EcoFazenda">
-        <h1>Bem-vindo à EcoFazenda Inteligente</h1>
-        <p>Tecnologia e sustentabilidade no campo para um futuro melhor.</p>
-    </section>
+    <main>
+        <section class="hero">
+            <h2>Agricultura Sustentável para o Futuro</h2>
+            <p>
+                A produção agrícola sustentável busca aumentar a produtividade
+                sem comprometer os recursos naturais das próximas gerações.
+            </p>
+            <button onclick="mostrarMensagem()">Saiba Mais</button>
+        </section>
 
-    <!-- Seção Sobre -->
-    <section id="sobre">
-        <h2>Sobre o Projeto</h2>
-        <p>O projeto EcoFazenda Inteligente utiliza sensores, painéis solares e tecnologias sustentáveis para melhorar a produção agrícola e reduzir impactos ambientais.</p>
-        <img src="img/painel-solar.png" alt="Painel Solar">
-    </section>
-
-    <!-- Seção Projeto -->
-    <section id="projeto">
-        <h2>Nosso Sistema</h2>
-        <div class="cards">
+        <section class="cards">
             <div class="card">
-                <img src="img/sensor-umidade.png" alt="Sensor de Umidade">
-                <h3>Monitoramento de Solo</h3>
-                <p>Sensores de umidade garantem irrigação eficiente e economia de água.</p>
+                <h3>🌾 Produção Responsável</h3>
+                <p>Uso eficiente do solo, água e insumos agrícolas.</p>
             </div>
+
             <div class="card">
-                <img src="img/painel-solar.png" alt="Painel Solar">
-                <h3>Energia Sustentável</h3>
-                <p>Painéis solares abastecem o sistema com energia limpa e renovável.</p>
+                <h3>💧 Preservação da Água</h3>
+                <p>Sistemas de irrigação inteligentes reduzem desperdícios.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Seção Simulador -->
-    <section id="simulador">
-        <h2>Simulador de Irrigação</h2>
-        <p>Escolha a quantidade de água para irrigação:</p>
-        <input type="number" id="agua" placeholder="Litros" min="0">
-        <button onclick="calcular()">Calcular</button>
-        <p id="resultado"></p>
-    </section>
+            <div class="card">
+                <h3>🌳 Conservação Ambiental</h3>
+                <p>Proteção das matas, rios e biodiversidade local.</p>
+            </div>
+        </section>
 
-    <!-- Seção Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: contato@ecofazenda.com.br</p>
-        <p>Telefone: (00) 12345-6789</p>
-    </section>
+        <section class="contador">
+            <h2>Impacto Sustentável</h2>
+            <p>Árvores preservadas:</p>
+            <h3 id="contador">0</h3>
+            <button onclick="plantarArvore()">🌱 Plantar Árvore</button>
+        </section>
+    </main>
 
-    <!-- Rodapé -->
     <footer>
-        <p>© 2026 EcoFazenda Inteligente - Projeto Agrinho</p>
+        <p>© 2026 Agro Forte Sustentável</p>
     </footer>
 
     <script src="script.js"></script>
