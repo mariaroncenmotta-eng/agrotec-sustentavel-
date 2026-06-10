@@ -1,1 +1,207 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f9f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #2e7d32;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c8e6c9;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e8f5e9;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    margin-top: 20px;
+    color: #1b5e20;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+section p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Imagens das seções */
+section img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 320px;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #2e7d32;
+}
+
+/* Simulador */
+#simulador {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 20px;
+}
+
+#simulador input[type="number"] {
+    padding: 12px;
+    width: 220px;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+#simulador button {
+    padding: 12px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#simulador button:hover {
+    background: #2e7d32;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+/* Contato */
+#contato {
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .banner h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #simulador input[type="number"] {
+        width: 90%;
+    }
+}
